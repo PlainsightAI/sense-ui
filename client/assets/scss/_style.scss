@@ -1,0 +1,45 @@
+// Foundation CSS for Sixgill
+body {
+  overflow: hidden; // Removes page "bounce" when scroll to top & bottom
+}
+
+.side-menu {
+  background: $primary-color;
+  color: #fff;
+
+  padding: 50px;
+}
+
+.login-logo {
+  margin-bottom: 50px;
+}
+
+.static-pages .grid-content {
+  padding: 50px;
+}
+
+.static-pages {
+  label {
+    font-weight: 600;
+  }
+}
+
+.green-line {
+  background: $terciary-color;
+  height: 5px;
+  min-height: 5px;
+  max-height: 5px;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.back {
+  position: absolute;
+  bottom: 20px;
+
+  a {
+    color: #fff;
+  }
+}
