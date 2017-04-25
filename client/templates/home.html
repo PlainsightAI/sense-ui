@@ -1,8 +1,8 @@
 ---
 name: home
 url: /
-title: Dashboard
 ---
+
 <div class="grid-frame vertical">
   <div class="grid-content shrink" style="padding: 0;">
     <ul class="primary condense menu-bar">
@@ -16,10 +16,16 @@ title: Dashboard
       <br />
       <h2>List of Pages / Views</h2>
       <ul>
-        <li><a href="#" ui-sref="home">Home <i>(This page)</i></a></li>
+        <li><a href="#" ui-sref="home">Home <em>(This page)</em></a></li>
         <li><a href="#" ui-sref="kitchen-sink">Kitchen Sink</a></li>
-        <li><a href="#" ui-sref="login">Login</a></li>
       </ul>
+      <h2>Static Login Pages</h2>
+        <ul>
+          <li><a href="#" ui-sref="login">Login</a></li>
+          <li><a href="#" ui-sref="account-setup">Account Setup</a></li>
+          <li><a href="#" ui-sref="forgot-password">Forgot Password</a></li>
+          <li><a href="#" ui-sref="set-password">Set Password</a></li>
+        </ul>
     </div>
   </div>
 </div>
