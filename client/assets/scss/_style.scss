@@ -34,9 +34,7 @@ body {
 
 .green-line {
   background: $terciary-color;
-  height: 5px;
-  min-height: 5px;
-  max-height: 5px;
+  flex: 0 0 5px;
 }
 
 h1 {
