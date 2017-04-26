@@ -434,7 +434,7 @@ $form-label-color: #1a1a1a;
 // $menubar-color-hover: $menubar-color;
 // $menubar-color-active: $menubar-color-hover;
 
-// $menubar-item-padding: $global-padding;
+$menubar-item-padding: rem-calc(17);
 // $menubar-icon-size: 25px;
 // $menubar-icon-spacing: $menubar-item-padding;
 
