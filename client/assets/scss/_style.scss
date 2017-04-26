@@ -3,6 +3,8 @@ body {
   overflow: hidden; // Removes page "bounce" when scroll to top & bottom
 }
 
+// Static Pages (Login, Account Setup, Forgot Password, Set Password)
+
 .side-menu {
   background: $primary-color;
   color: #fff;
@@ -18,6 +20,7 @@ body {
   margin-bottom: 30px;
 }
 
+
 .about-sixgill-sense {
   font-size: 16px;
 }
@@ -32,10 +35,23 @@ body {
   }
 }
 
+.back {
+  position: absolute;
+  bottom: 20px;
+
+  a {
+    color: #fff;
+  }
+}
+
+// Green Line at the bottom of each page
+
 .green-line {
   background: $terciary-color;
   flex: 0 0 5px;
 }
+
+// Top-bar (Logo, top level navigation links, organization selector, account menu)
 
 .menu-group {
   flex: 0 0 50px;
@@ -82,17 +98,9 @@ body {
   }
 }
 
+// Some Global styles
 h1 {
   font-weight: 300;
-}
-
-.back {
-  position: absolute;
-  bottom: 20px;
-
-  a {
-    color: #fff;
-  }
 }
 
 .no-margin {
