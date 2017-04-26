@@ -98,6 +98,27 @@ body {
   }
 }
 
+// Projects Menu
+
+.projects-menu {
+  flex: 0 0 170px;
+  background: #f2f2f2;
+  border-right: 1px solid #e6e6e6;
+  padding: 20px;
+
+  ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+}
+
+// Dashboard View
+
+.dashboard-view {
+  padding: 20px;
+}
+
 // Some Global styles
 h1 {
   font-weight: 300;
