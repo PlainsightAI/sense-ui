@@ -156,6 +156,35 @@ body {
   }
 }
 
+// Quick Filters
+
+.quick-filters {
+  background: none;
+  margin-bottom: 20px;
+
+  li a {
+    padding: 0 0 5px 0;
+    margin: 0 16px 0 16px;
+    border-bottom: 1px solid transparent;
+    color: $secondary-color;
+
+    &:hover {
+      background: none;
+      border-bottom: 1px solid $terciary-color;
+      color: $secondary-color;
+    }
+  }
+
+  li:first-child a {
+    margin-left: 0;
+  }
+
+  .active a {
+    border-bottom: 1px solid $terciary-color;
+    font-weight: 600;
+  }
+}
+
 // Projects Menu
 
 .projects-menu {
