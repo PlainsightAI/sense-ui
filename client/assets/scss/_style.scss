@@ -280,6 +280,7 @@ body {
 }
 
 // Some Global styles
+
 h1 {
   font-weight: 300;
 }
@@ -295,4 +296,26 @@ h1 {
 
 .folder-arrow {
   font-size: 10px;
+}
+
+// Status Colors
+
+.status-red {
+  color: $status-red-color;
+}
+
+.status-green {
+  color: $status-green-color;
+}
+
+.status-orange {
+  color: $status-orange-color;
+}
+
+.status-blue {
+  color: $status-blue-color;
+}
+
+.status-gray {
+  color: $status-gray-color;
 }
