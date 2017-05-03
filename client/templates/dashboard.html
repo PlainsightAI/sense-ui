@@ -16,8 +16,38 @@ url: /dashboard
 
     <div class="menu-group-right">
       <ul class="menu-bar primary icon-left">
-        <li><a href="#">AT&T <i class="icon ion-chevron-down dropdown-arrow"></i></a></li>
-        <li><a href="#"><i class="icon ion-person account-icon"></i> <i class="icon ion-chevron-down dropdown-arrow"></i></a></li>
+        <li><a href="#" zf-popup-toggle="organizations-dropdown">AT&T <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+            <zf-popup id="organizations-dropdown" class="popover organizations-popover">
+              <form>
+                <label>
+                  <span class="inline-label">
+                    <span class="form-label"><i class="icon ion-search"></i></span>
+                    <input type="text" placeholder="Search Organizations">
+                  </span>
+                </label>
+              </form>
+              <ul class="organizations-list">
+                <li><a href="#">AT&T</a></li>
+                <li><a href="#">Sixgill</a></li>
+                <li><a href="#">Verizon</a></li>
+                <li><a href="#">San Francisco City</a></li>
+                <li><a href="#">Los Angeles City</a></li>
+              </ul>
+            </zf-popup>
+        </li>
+
+        <li><a href="#" zf-popup-toggle="account-dropdown"><i class="icon ion-person account-icon"></i> <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+          <zf-popup id="account-dropdown" class="popover account-popover">
+            <ul>
+              <li><a href="#">Admin</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </zf-popup>
+        </li>
       </ul>
     </div>
   </div>
