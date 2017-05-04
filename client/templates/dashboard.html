@@ -99,7 +99,7 @@ url: /dashboard
       </div>
 
       <div class="grid-content console-menu">
-        <a href="#" class="button"><i class="icon ion-code"></i> Console</a>
+        <a zf-open="console-modal" href="#" class="button"><i class="icon ion-code"></i><b>Console</b></a>
       </div>
     </div>
 
@@ -165,4 +165,10 @@ url: /dashboard
     </div>
   </div>
   <div class="grid-block green-line"></div>
+</div>
+
+<div zf-modal="console-modal" id="console-modal">
+  <a zf-close="" class="close-button"><i class="icon ion-close"></i></a>
+  <h1>Debug Console</h1>
+  <p>Basic Modal</p>
 </div>

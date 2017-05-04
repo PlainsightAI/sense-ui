@@ -343,10 +343,10 @@ $button-font-size: 1rem;
 // - - - - - - - - - - - - - - -
 
 // $closebutton-position: (top right);
-// $closebutton-size: 2em;
-// $closebutton-lineheight: 0.5;
-// $closebutton-color: #999;
-// $closebutton-color-hover: #333;
+$closebutton-size: 1.3rem;
+$closebutton-lineheight: 1;
+$closebutton-color: #1a1a1a;
+$closebutton-color-hover: $secondary-color;
 
 // $thumbnail-padding: 0.5rem;
 // $thumbnail-shadow: 0 3px 15px rgba(black, 0.25);
@@ -460,8 +460,8 @@ $modal-radius: 1px;
 //   large: 800px,
 // );
 
-// $modal-overlay-class: 'modal-overlay';
-// $modal-overlay-background: rgba(#333, 0.7);
+$modal-overlay-class: 'modal-overlay';
+$modal-overlay-background: rgba(#fff, 0.9);
 
 // 18. Motion UI
 // - - - - - - - - - - - - - - -
