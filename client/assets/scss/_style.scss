@@ -8,8 +8,14 @@ body {
 .side-menu {
   background: $primary-color;
   color: #fff;
+}
 
-  padding: 50px;
+.about-container {
+  padding: 50px 50px 25px 50px;
+}
+
+.back-container {
+  padding: 25px 50px;
 }
 
 .sixgill-logo {
@@ -25,7 +31,7 @@ body {
   font-size: 16px;
 }
 
-.static-pages .grid-content {
+.static-pages .page-container {
   padding: 50px;
 }
 
@@ -36,12 +42,11 @@ body {
 }
 
 .back {
-  position: absolute;
-  bottom: 20px;
+  margin: 0;
+}
 
-  a {
-    color: #fff;
-  }
+.back a {
+  color: #fff;
 }
 
 // Green Line at the bottom of each page
