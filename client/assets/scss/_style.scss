@@ -257,18 +257,58 @@ body {
   }
 }
 
+// Sidebar
+.sidebar {
+  flex: 0 0 170px;
+  background: #f2f2f2;
+  border-right: 1px solid #e6e6e6;
+}
+
+.add-new-menu {
+  flex: 0 0 auto;
+  padding: 15px;
+  // border-bottom: 1px solid #e6e6e6;
+
+  .button {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  i {
+    font-size: 12px;
+    float: right;
+    margin-top: 1px;
+  }
+}
+
+.console-menu {
+  flex: 0 0 auto;
+  padding: 15px;
+  // border-top: 1px solid #e6e6e6;
+
+  .button {
+    margin: 0;
+    width: 100%;
+    //padding: 0.6rem;
+  }
+
+  i {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 5px 0 0;
+  }
+}
 
 // Projects Menu
 
 .projects-menu {
-  flex: 0 0 170px;
-  background: #f2f2f2;
-  border-right: 1px solid #e6e6e6;
-  padding: 20px 20px 20px 15px;
+  padding: 0 15px;
 
   ul {
     list-style: none;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     padding: 0;
   }
 
@@ -305,14 +345,25 @@ body {
     margin-right: 4px;
   }
 
+  .app-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .app-name:hover {
     color: $secondary-color;
     cursor: pointer;
   }
 
   .project-item {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 18px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &.active .project-title {
       color: $secondary-color;
@@ -354,6 +405,11 @@ h1 {
 
 .folder-arrow {
   font-size: 10px;
+}
+
+button,
+.button {
+  font-weight: 700;
 }
 
 // Popovers
