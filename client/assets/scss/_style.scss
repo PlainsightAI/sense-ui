@@ -216,6 +216,10 @@ body {
   }
 
   .link-items {
+    ul {
+      overflow: hidden;
+    }
+
     li {
       padding-left: 12px;
 
