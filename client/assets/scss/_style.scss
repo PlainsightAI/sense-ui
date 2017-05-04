@@ -264,12 +264,70 @@ body {
   flex: 0 0 170px;
   background: #f2f2f2;
   border-right: 1px solid #e6e6e6;
-  padding: 20px;
+  padding: 20px 20px 20px 15px;
 
   ul {
     list-style: none;
     margin: 0 0 20px 0;
     padding: 0;
+  }
+
+  a {
+    color: $body-font-color;
+
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 1px solid $terciary-color;
+    }
+  }
+
+  .app-expanded .app-name:before {
+    display: inline-block;
+    font-family: $ionicons-font-family;
+    content: $ionicon-var-chevron-down;
+    font-size: 10px;
+    width: 12px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-right: 4px;
+  }
+
+  .app-collapsed .app-name:before {
+    display: inline-block;
+    font-family: $ionicons-font-family;
+    content: $ionicon-var-chevron-right;
+    font-size: 10px;
+    width: 12px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-right: 4px;
+  }
+
+  .app-name:hover {
+    color: $secondary-color;
+    cursor: pointer;
+  }
+
+  .project-item {
+    margin-top: 10px;
+    margin-left: 18px;
+
+    &.active .project-title {
+      color: $secondary-color;
+      border-bottom: 1px solid $terciary-color;
+      font-weight: 700;
+    }
+  }
+
+  .project-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+  }
+
+  .app-collapsed ul {
+    display: none;
   }
 }
 
