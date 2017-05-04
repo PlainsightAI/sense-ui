@@ -49,6 +49,16 @@ body {
   color: #fff;
 }
 
+// Controls on Wizard pages
+.controls-view {
+  padding: 10px 0 0 0;
+  border-top: 1px solid #e6e6e6;
+
+  .v-align {
+    width: 100%;
+  }
+}
+
 // Green Line at the bottom of each page
 
 .green-line {
@@ -405,7 +415,7 @@ body {
 // Dashboard View
 
 .dashboard-view {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 // Some Global styles
@@ -425,6 +435,25 @@ h1 {
 
 .folder-arrow {
   font-size: 10px;
+}
+
+.title-underline {
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $secondary-color;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.large-icons {
+  font-size: 48px;
 }
 
 button,
@@ -555,4 +584,45 @@ button,
   font-size: 20px;
   margin-right: 5px;
   line-height: 1rem;
+}
+
+// Add Events
+.choose-template {
+  list-style: none;
+  margin: -10px 0 0 0;
+
+  li {
+    line-height: 1.4;
+  }
+
+  i {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $body-font-color;
+
+    &:hover {
+      color: $secondary-color;
+
+      b {
+        border-bottom: 1px solid $terciary-color;
+      }
+    }
+  }
+
+  b {
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+  }
+
+  .active a {
+    color: $secondary-color;
+
+    b {
+      border-bottom: 1px solid $terciary-color;
+    }
+  }
+
 }

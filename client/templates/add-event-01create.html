@@ -1,6 +1,6 @@
 ---
-name: dashboard
-url: /dashboard
+name: add-event-create
+url: /add-event-create
 ---
 
 <div class="grid-frame vertical">
@@ -128,65 +128,40 @@ url: /dashboard
       <div class="grid-block vertical dashboard-view">
         <div class="grid-block vertical shrink top-view">
           <div class="title-wrap clearfix">
-            <h1 class="float-left">Events</h1>
-            <a href="#" class="button float-right no-margin">Send One-Time Action</a>
-            <a href="#" class="button float-right no-margin">Add New Event</a>
+            <h1 class="float-left">Add New Event</h1>
           </div>
 
           <ul class="menu-bar quick-filters condense">
-            <li class="active"><a href="#">All</a></li>
-            <li><a href="#">Running</a></li>
-            <li><a href="#">Disabled</a></li>
-            <li><a href="#">Complete</a></li>
-            <li><a href="#">Draft</a></li>
+            <li class="active"><a href="#">1. Create New Event</a></li>
+            <li><a href="#">2. Name & Details</a></li>
+            <li><a href="#">3. Rules</a></li>
+            <li><a href="#">4. Schedule</a></li>
+            <li><a href="#">5. Test & Confirm</a></li>
           </ul>
-
-          <div class="menu-group statistics-bar">
-            <div class="menu-group-left statistics-items">
-              <ul class="menu-bar condense">
-                <li><b>Total: 7 Events</b></li>
-                <li><i class="icon ion-android-radio-button-off status-green"></i>&nbsp;<b>58%</b>&nbsp;Running</li>
-                <li><i class="icon ion-android-radio-button-off status-red"></i>&nbsp;<b>14%</b>&nbsp;Disabled</li>
-                <li><i class="icon ion-android-radio-button-off status-gray"></i>&nbsp;<b>14%</b>&nbsp;Complete</li>
-                <li><i class="icon ion-android-radio-button-off status-blue"></i>&nbsp;<b>14%</b>&nbsp;Draft</li>
-              </ul>
-            </div>
-
-            <div class="menu-group-right link-items">
-              <ul class="menu-bar condense">
-                <li><a href="#">Actions <i class="icon ion-chevron-down dropdown-arrow"></i></a></li>
-                <li><a href="#"><i class="icon ion-gear-a settings-icon"></i></a></li>
-                <li><a href="#"><i class="icon ion-funnel filters-icon"></i> Filters</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         <div class="grid-block bottom-view">
-          <div class="grid-content table-view">
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
-            <p>Table</p>
+          <div class="grid-content medium-3 no-padding-left">
+            <h3 class="title-underline">Create New Event From</h3>
+            <ul class="choose-template">
+              <li class="active"><a href=#><i class="icon ion-clipboard large-icons"></i> <b>Template</b></a></li>
+              <li><a href=#><i class="icon ion-document-text large-icons"></i> <b>Existing Event</b></a></li>
+              <li><a href=#><i class="icon ion-document large-icons"></i> <b>Blank Document</b></a></li>
+            </ul>
+          </div>
+
+          <div class="grid-content medium-9 no-padding-right">
+            <h3 class="title-underline">Templates</h3>
+            <p>Location Based</p>
+            <p>Time Based</p>
+            <p>Sensor Based</p>
+          </div>
+        </div>
+
+        <div class="grid-block shrink controls-view">
+          <div class="v-align">
+            <a href="#" class="float-left no-margin">Cancel</a>
+            <a href="#" class="button float-right no-margin">Continue to Name & Details</a>
           </div>
         </div>
 
