@@ -1,6 +1,6 @@
 ---
-name: add-event-create
-url: /add-event-create
+name: add-new-device
+url: /add-new-device
 ---
 
 <div class="grid-frame vertical">
@@ -128,40 +128,79 @@ url: /add-event-create
       <div class="grid-block vertical dashboard-view">
         <div class="grid-block vertical shrink top-view">
           <div class="title-wrap clearfix">
-            <h1 class="float-left">Add New Event</h1>
+            <h1 class="float-left">Add New Device</h1>
           </div>
-
-          <ul class="menu-bar quick-filters condense">
-            <li class="active"><a href="#">1. Create New Event</a></li>
-            <li><a href="#">2. Name & Details</a></li>
-            <li><a href="#">3. Rules</a></li>
-            <li><a href="#">4. Schedule</a></li>
-            <li><a href="#">5. Test & Confirm</a></li>
-          </ul>
         </div>
 
         <div class="grid-block bottom-view">
-          <div class="grid-content medium-3 no-padding-left">
-            <h3 class="title-underline">Create New Event From</h3>
-            <ul class="choose-template">
-              <li class="active"><a href=#><i class="icon ion-clipboard large-icons"></i> <b>Template</b></a></li>
-              <li><a href=#><i class="icon ion-document-text large-icons"></i> <b>Existing Event</b></a></li>
-              <li><a href=#><i class="icon ion-document large-icons"></i> <b>Blank Document</b></a></li>
-            </ul>
-          </div>
+          <div class="grid-content no-padding-left">
+            <form>
+              <label>Display Name
+                <input class="medium-3" type="text">
+              </label>
+              <div class="form-group">
+                <label>Device Type
+                </label>
+                <select class="medium-3" name="#" id="#">
+                  <option value="">Sensor</option>
+                  <option value="">Mobile</option>
+                  <option value="">Beacon</option>
+                </select>
+                <span>or</span>
+                <a href="#">Add New Device Type</a>
+              </div>
+              <label>Tags <i>(comma separated)</i>
+                <input class="medium-6" type="text">
+              </label>
 
-          <div class="grid-content medium-9 no-padding-right">
-            <h3 class="title-underline">Templates</h3>
-            <p>Location Based</p>
-            <p>Time Based</p>
-            <p>Sensor Based</p>
+              <h3 class="title-underline middle-6">Sensor Info</h3>
+
+              <label>Device ID
+                <input class="medium-6" type="text">
+              </label>
+              <label>Hardware version
+                <input class="medium-6" type="text">
+              </label>
+              <label>Serial number <i>(optional)</i>
+                <input class="medium-6" type="text">
+              </label>
+              <label>Manufacturer <i>(optional)</i>
+                <input class="medium-6" type="text">
+              </label>
+              <label>Model <i>(optional)</i>
+                <input class="medium-6" type="text">
+              </label>
+              <label>Firmware Version <i>(optional)</i>
+                <input class="medium-6" type="text">
+              </label>
+              <label>JSON Meta Data <i>(optional)</i>
+                <textarea class="medium-12" type="text" rows="6"></textarea>
+              </label>
+
+              <h3 class="title-underline">Security</h3>
+
+              <div class="stacked-radio">
+              <label>Choose Your Favorite</label>
+                <label><input class type="radio" name="" value="" id="" checked> Auto-generated Authentication Token</label>
+                <label><input type="radio" name="" value="" id=""> Self-provided Authentication Token</label>
+                <br />
+                <p><b>Allow the service to generate an authentication token for you.</b><br />
+                The token will be 18 characters long and will contain a mix of alphanumeric characters and symbols.<br />
+                <b>The token will be returned to you at the end of the registration process.</b></p>
+                <br />
+              </div>
+
+            </form>
+
+
           </div>
         </div>
 
         <div class="grid-block shrink controls-view">
           <div class="v-align">
             <a href="#">Cancel</a>
-            <a href="#" class="button no-margin">Continue to Name & Details</a>
+            <a href="#">Save as Draft</a>
+            <a href="#" class="button no-margin">Save & Register Device</a>
           </div>
         </div>
 
