@@ -183,26 +183,81 @@ url: /filters-advanced
                 <li class="applied-title"><b><i>Applied Filters (0)</b></i></li>
               </ul>
 
-              <div class="filters-content">
-                <form class="quick-selection">
-                  <input class="medium-3" type="text" placeholder="i.e. Event Name">
-                  <select class="medium-2 filter-type" name="#" id="#">
-                    <option value="">Display Name</option>
-                    <option value="">Status</option>
-                    <option value="">Tags</option>
-                    <option value="">Triggers</option>
-                    <option value="">Event Action</option>
-                    <option value="">Last Time Triggered</option>
-                  </select>
-                  <span>or</span>
-                  <select class="medium-3" name="#" id="#">
-                    <option value="">Load Filter</option>
-                    <option value="">Running Events</option>
-                    <option value="">Public Transport Visitors</option>
-                    <option value="">Disabled Devices</option>
-                    <option value="">Low Battery Device Status</option>
-                  </select>
-                </form>
+              <div class="grid-block filters-content">
+                <div class="medium-4">
+                  <form class="advanced-selection">
+                    <h5 class="title-underline">Device Filters</h5>
+                    <div class="scroll-container">
+                      <label>Device ID
+                        <input type="text">
+                      </label>
+                      <label>Type
+                        <input type="text">
+                      </label>
+                      <label>Tags
+                        <input type="text">
+                      </label>
+                      <label>Color
+                        <input type="text">
+                      </label>
+                      <label>Last Broadcast
+                        <input type="text">
+                      </label>
+                      <label>Last Location
+                        <input type="text">
+                      </label>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="medium-4">
+                  <form class="advanced-selection">
+                    <h5 class="title-underline">Event Filters</h5>
+                    <div class="scroll-container">
+                      <label>Display Name
+                        <input type="text">
+                      </label>
+                      <label>Status
+                        <input type="text">
+                      </label>
+                      <label>Tags
+                        <input type="text">
+                      </label>
+                      <label>Triggers
+                        <input type="text">
+                      </label>
+                      <label>Event Action
+                        <input type="text">
+                      </label>
+                      <label>Last Time Triggered
+                        <input type="text">
+                      </label>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="medium-4">
+                  <form class="advanced-selection">
+                    <h5 class="title-underline">Landmark Filters</h5>
+                    <div class="scroll-container">
+                      <label>Display Name
+                        <input type="text">
+                      </label>
+                      <label>Status
+                        <input type="text">
+                      </label>
+                      <label>Tags
+                        <input type="text">
+                      </label>
+                      <label>Used by Events
+                        <input type="text">
+                      </label>
+                      <label>Last Time Device Broadcasted
+                        <input type="text">
+                      </label>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

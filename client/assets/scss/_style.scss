@@ -438,6 +438,8 @@ label {
   i {
     font-weight: 400;
   }
+
+  margin-bottom: 1rem;
 }
 
 input[type="radio"] {
@@ -746,6 +748,18 @@ button,
   }
 
   .filters-content {
+    > div {
+      padding: 0 1rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
     input,
     select {
       display: inline-block;
@@ -758,6 +772,11 @@ button,
       vertical-align: top;
       margin: 10px 15px 0 15px;
     }
+  }
+
+  .scroll-container {
+    max-height: 195px;
+    overflow: auto;
   }
 }
 
