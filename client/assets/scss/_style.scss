@@ -661,6 +661,33 @@ button,
   }
 }
 
+.box {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 10px 15px 0 15px;
+  flex: 0 0 calc(50% - 10px);
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 1px solid #bbb;
+  }
+
+  &.active {
+    border: 1px solid $terciary-color;
+  }
+}
+
+.box-wrap {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  justify-content: space-between;
+}
+
 // Filters
 .filters-container {
   padding: 15px;
