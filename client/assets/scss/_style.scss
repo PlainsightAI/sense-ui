@@ -725,12 +725,15 @@ button,
       display: inline-block;
       padding-right: 6px;
     }
+
+    li:nth-child(2) {
+      padding-left: 10px;
+      border-left: 1px solid #e6e6e6;
+    }
   }
 
   li.applied-title {
-    margin-right: 6px;
-    padding-right: 10px;
-    border-right: 1px solid #e6e6e6;
+    padding-right: 8px;
   }
 
   .remove-icon {
