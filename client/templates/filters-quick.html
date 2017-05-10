@@ -1,6 +1,6 @@
 ---
-name: events
-url: /events
+name: filters-quick
+url: /filters-quick
 ---
 
 <div class="grid-frame vertical">
@@ -161,11 +161,53 @@ url: /events
             </div>
           </div>
 
-<!-- Refer to filters-quick.html & filters-advanced.html for Filters part
           <div class="filters-container">
-          </div>
-!-->
+            <div class="menu-group vertical filter-menu">
+              <div class="menu-group-left filter-mode">
+                <ul class="menu-bar condense">
+                  <li class="active"><a href="#">Quick Filter</a></li>
+                  <li><a href="#">Advanced Filter</a></li>
+                </ul>
+              </div>
 
+              <div class="menu-group-right filter-actions">
+                <ul class="menu-bar condense">
+                  <li><a href="#">Save Filter</a></li>
+                  <li><a href="#">Clear all</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="filters-wrap">
+              <ul class="applied-filters">
+                <li class="applied-title"><b><i>Applied (2)</b></i></li>
+                <li class="applied-item"><b><i>Status:</b></i> <span>Running <a href="#"><i class="icon ion-close remove-icon"></i></a></span></li>
+                <li class="applied-item"><b><i>Tags:</b></i> <span>Promotions <a href="#"><i class="icon ion-close remove-icon"></i></a></span></li>
+              </ul>
+
+              <div class="filters-content">
+                <form class="quick-selection">
+                  <input class="medium-3" type="text" placeholder="i.e. Event Name">
+                  <select class="medium-2 filter-type" name="#" id="#">
+                    <option value="">Display Name</option>
+                    <option value="">Status</option>
+                    <option value="">Tags</option>
+                    <option value="">Triggers</option>
+                    <option value="">Event Action</option>
+                    <option value="">Last Time Triggered</option>
+                  </select>
+                  <span>or</span>
+                  <select class="medium-3" name="#" id="#">
+                    <option value="">Load Filter</option>
+                    <option value="">Running Events</option>
+                    <option value="">Public Transport Visitors</option>
+                    <option value="">Disabled Devices</option>
+                    <option value="">Low Battery Device Status</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
        </div>
 
