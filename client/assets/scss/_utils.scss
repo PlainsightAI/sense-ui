@@ -4,7 +4,11 @@
 
 
 .warning {
-  border: 1px solid red;
+  border: 1px solid red !important;
+}
+
+label input {
+  transition: border 0.3s ease;
 }
 
 .error-message {
@@ -12,4 +16,10 @@
   color: red;
   font-weight: 300;
   display: block;
+
+  &.is-large {
+    padding: 7px 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
