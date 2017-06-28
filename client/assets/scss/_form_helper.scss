@@ -1,0 +1,38 @@
+.u-pointer {
+  cursor: pointer;
+}
+
+.warning {
+  border: 1px solid red !important;
+}
+.failing {
+  border: 1px solid red !important;
+}
+.passing {
+  border: 1px solid green !important;
+}
+
+label input {
+  transition: border 0.3s ease;
+}
+
+.error-message {
+  color: red;
+  font-weight: 300;
+  // padding-top: 10px;
+  // display: block;
+  // display: inline;
+  margin-left: 10px;
+
+  &.new-line {
+    display: block;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  &.is-large {
+    padding: 7px 0;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
