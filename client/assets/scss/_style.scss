@@ -696,7 +696,7 @@ button,
 
   .filter-mode,
   .filter-actions {
-    li a {
+    li a, li .btn-plain {
       padding: 0 0 5px 0;
       margin: 0 16px 0 16px;
       border-bottom: 1px solid transparent;
@@ -709,11 +709,11 @@ button,
       }
     }
 
-    li:first-child a {
+    li:first-child a, li:first-child .btn-plain {
       margin-left: 0;
     }
 
-    .active a {
+    .active a, .active .btn-plain {
       border-bottom: 1px solid $terciary-color;
       font-weight: 700;
     }
@@ -728,7 +728,7 @@ button,
       padding: 0 0 0 12px;
 
 
-      a {
+      a, .btn-plain {
         margin: 0;
         color: $body-font-color;
       }
@@ -820,7 +820,7 @@ button,
     margin: 10px 15px 0 15px;
   }
 
-  a {
+  a, .btn-plain {
     display: inline-block;
     vertical-align: top;
     margin: 10px 0 0 0;

@@ -2,6 +2,35 @@
   cursor: pointer;
 }
 
+.btn-plain {
+  color: #1a1a1a;
+  padding: 0px 0px 5px;
+  margin: 0px 16px;
+  margin: 0px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 400;
+  background: transparent;
+  line-height: 1;
+  &:hover {
+    color: rgb(0, 81, 198);
+    background: none;
+    border-bottom: 1px solid rgb(77, 219, 90);
+  }
+}
+
+.remove-icon {
+  color: #002966;
+  font-weight: 400;
+  // line-height: 1;
+  // font-size: 1rem;
+  // line-height: 1;
+  cursor: pointer;
+  &:hover, &:focus {
+    color: #002358;
+  }
+}
+
 .warning {
   border: 1px solid red !important;
 }
@@ -34,5 +63,49 @@ label input {
     padding: 7px 0;
     font-weight: 400;
     font-size: 16px;
+  }
+}
+
+
+
+// 160px
+.menu-group-right {
+  .popover {
+    right: 0;
+    top: 50px;
+    &.search-dropdown {
+      width: 240px;
+    }
+    &.account-dropdown {
+      width: 160px;
+    }
+
+    li {
+      padding: 0;
+      &:hover {
+        background: transparent;
+      }
+
+      &:first-child {
+        a {
+          padding-top: 0 !important;
+        }
+      }
+      &:last-child {
+        a {
+          padding-bottom: 0 !important;
+        }
+      }
+
+    }
+    a {
+      padding: 6px 0 !important;
+      display: block;
+      margin: 0 !important;
+      font-weight: 400;
+      text-transform: none;
+      border-top: none !important;
+    }
+
   }
 }
