@@ -111,9 +111,31 @@ label input {
 
 
 // Accordian animation
-
 .accordian-container {
   overflow: hidden;
   height: 0;
   transition: 0.3s;
+}
+
+
+// Modals scss
+
+#root {
+  .modal-overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out, 0.3s visibility 0.3s ease-in-out;
+    display: flex;
+    &.is-active {
+      transition: 0.3s opacity ease-in-out;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .modal {
+    a {
+      cursor: pointer;
+    }
+  }
 }
