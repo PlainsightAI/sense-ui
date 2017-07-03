@@ -162,11 +162,10 @@ body {
 
   .navigation-items li a {
     color: $secondary-color;
-  }
-
-  .navigation-items .active a {
-    border-bottom: 1px solid $terciary-color;
-    font-weight: 700;
+    &.active {
+      border-bottom: 1px solid $terciary-color;
+      font-weight: 700;
+    }
   }
 }
 
@@ -706,6 +705,11 @@ button,
         background: none;
         border-bottom: 1px solid $terciary-color;
         color: $secondary-color;
+      }
+
+      &.active {
+        border-bottom: 1px solid $terciary-color;
+        font-weight: 700;
       }
     }
 

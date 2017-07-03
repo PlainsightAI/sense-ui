@@ -106,6 +106,14 @@ label input {
       text-transform: none;
       border-top: none !important;
     }
-
   }
+}
+
+
+// Accordian animation
+
+.accordian-container {
+  overflow: hidden;
+  height: 0;
+  transition: 0.3s;
 }
