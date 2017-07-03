@@ -17,6 +17,9 @@
     background: none;
     border-bottom: 1px solid rgb(77, 219, 90);
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .remove-icon {
