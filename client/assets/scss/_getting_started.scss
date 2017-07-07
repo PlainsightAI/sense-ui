@@ -1,0 +1,53 @@
+.getting-started-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.getting-started-circle {
+  padding: 10px 15px;
+  background: #888;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.getting-started-nav {
+  margin-top: 15px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  a.active {
+    // border-bottom: 2px solid #4ddb5a;
+    border-top: 2px solid $terciary-color;
+    .getting-started-circle {
+      background: $secondary-color;
+    }
+  }
+  > a {
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    max-height: 100px;
+    display: flex;
+  }
+}
+
+.u-is-bold {
+  font-weight: 700;
+}
+
+.skip-tutorial {
+  font-weight: 500;
+  color: #000;
+}
+
+
+.getting-started-subnav {
+  border-bottom: 1px solid #e6e6e6;
+  flex: none;
+  padding: 0;
+  > div {
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+}
