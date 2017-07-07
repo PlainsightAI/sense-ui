@@ -112,6 +112,9 @@ label input {
   }
 }
 
+.is-capitalized {
+  text-transform: capitalize;
+}
 
 // Accordian animation
 .accordian-container {
