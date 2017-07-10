@@ -1,3 +1,10 @@
+.normalize-flex {
+  flex: initial;
+  width: 100%;
+}
+
+
+
 .getting-started-container {
   padding-left: 20px;
   padding-right: 20px;
@@ -17,6 +24,8 @@
   margin-top: 20px;
   border: 1px solid #e6e6e6;
   border-bottom: none;
+  height: 100px;
+  max-height: 100px;
   > a {
     transition: border-color 0.2s ease;
     align-items: center;
@@ -86,4 +95,31 @@
     padding-top: 16px;
     padding-bottom: 12px;
   }
+}
+
+
+.getting-started-content {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  padding: 10px 15px;
+  padding-bottom: 0;
+
+  > div {
+    padding-bottom: 15px;
+  }
+  // Consider to make more like mockup
+  // p {
+    // -webkit-font-smoothing: auto;
+  // }
+}
+
+.getting-started-side-section {
+  border-right: 1px solid #e6e6e6;
+  padding-right: 20px;
+  width: 25%;
+}
+
+.getting-started-main-section {
+  padding-left: 20px;
+  width: auto;
 }
