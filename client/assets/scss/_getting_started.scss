@@ -19,6 +19,13 @@
   background: $terciary-color;
 }
 
+.blue-hr {
+  width: 100%;
+  height: 1px;
+  background: $secondary-color;
+  margin-bottom: 5px;
+}
+
 .getting-started-container {
   padding-left: 20px;
   padding-right: 20px;
@@ -97,6 +104,10 @@
   font-weight: 700;
 }
 
+.u-is-inline {
+  display: inline-block;
+}
+
 .skip-tutorial {
   font-weight: 500;
   color: #000;
@@ -135,11 +146,24 @@
   border-right: 1px solid #e6e6e6;
   padding-right: 20px;
   width: 25%;
+  position: relative;
 }
 
 .getting-started-main-section {
   padding-left: 20px;
   width: 75%;
+  h1:first-child {
+    margin-top: 0;
+  }
+  &.connect-section {
+    h3 {
+      font-weight: 700;
+    }
+    p {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 
@@ -201,4 +225,31 @@
   margin: 40px 150px;
   margin-bottom: 55px;
   margin-right: 0;
+}
+
+.getting-started-connection-success {
+  margin-top: 14px;
+  display: inline-block;
+}
+
+.getting-started-footer {
+  position: absolute;
+  bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  width: calc(100% - 15px);
+
+  a {
+    font-weight: 700;
+    -webkit-font-smoothing: auto;
+    color: $secondary-color;
+    &:hover {
+      color: #002966;
+    }
+  }
+  p {
+    font-weight: 700;
+    -webkit-font-smoothing: auto;
+    margin-bottom: 5px;
+  }
 }
