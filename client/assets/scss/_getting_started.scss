@@ -258,3 +258,9 @@
     margin-bottom: 5px;
   }
 }
+.light-blue-link {
+  color: $secondary-color;
+  &:hover {
+    color: #002966;
+  }
+}
