@@ -92,6 +92,9 @@
       border-width: 10px;
     }
   }
+  a.is-disabled {
+    cursor: default;
+  }
 
   h3 {
     margin: 0;
