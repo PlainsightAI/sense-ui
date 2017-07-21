@@ -69,5 +69,3 @@ All source SCSS files live inside: `client/assets/scss/` folder
 All template HTML files can be found inside: `client/templates/` folder
 
 All build outputs go to: `build` folder
-
-## Edit
