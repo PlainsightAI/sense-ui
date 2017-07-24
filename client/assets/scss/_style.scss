@@ -5,6 +5,10 @@ body {
 
 // Static Pages (Login, Account Setup, Forgot Password, Set Password)
 
+ul, li {
+  list-style: none;
+}
+
 .side-menu {
   background: $primary-color;
   color: #fff;

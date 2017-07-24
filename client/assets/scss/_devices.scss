@@ -1,0 +1,45 @@
+.devices-list-header {
+  display: flex;
+  width: 100%;
+  flex-wrap: none;
+  padding: 1.25rem;
+  background: #f2f2f2;
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+  align-items: center;
+
+}
+
+.grid-content.table-view {
+  background: blue !important;
+}
+
+.grid-5 {
+  width: 5%;
+  max-width: 5%;
+}
+.grid-7 {
+  width: 7%;
+  max-width: 7%;
+}
+.grid-10 {
+  width: 10%;
+  max-width: 10%;
+}
+.grid-15 {
+  width: 15%;
+  max-width: 15%;
+}
+
+
+// 
+//
+// <li className="grid-5"><input type="checkbox" className="checkbox-icon" onClick={this.selectAllDevices} /></li>
+// <li className="grid-10">Device ID</li>
+// <li className="grid-15">Status</li>
+// <li className="grid-7">Type</li>
+// <li className="grid-7">Tags</li>
+// <li className="grid-15">Last Broadcast</li>
+// <li className="grid-15">Last Event Triggered</li>
+// <li className="grid-15">Last Location</li>
+// <li className="grid-10">Actions</li>
