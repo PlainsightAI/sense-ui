@@ -18,6 +18,7 @@
   padding: 0 10px;
   > li {
     display: flex;
+    border-bottom: 1px solid #e6e6e6;
     div {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -25,6 +26,9 @@
       display: flex;
       align-items: center;
       padding: 10px 5px;
+      &.devices-list-icons {
+        padding: 0 5px;
+      }
       span {
         text-overflow: ellipsis;
         overflow: hidden;
@@ -32,7 +36,6 @@
     }
   }
 }
-
 
 .dashboard-table {
   padding: 0 20px;
@@ -47,11 +50,27 @@
   i {
     font-size: 22px;
     font-weight: 700;
-    margin-right: 12px;
+    margin-right: 16px;
+    line-height: normal;
     // color: #888;
     &:last-child {
       margin-right: 0;
     }
+  }
+  &.actions i {
+    cursor: pointer;
+  }
+  .ion-android-radio-button-off {
+    font-size: 16px;
+  }
+  .ion-battery-full, .ion-battery-half, .ion-battery-low, .ion-battery-empty, .ion-battery-charging {
+    font-size: 24px;
+  }
+  .ion-edit {
+    font-size: 18px;
+  }
+  .ion-toggle-filled, .ion-toggle {
+    font-size: 32px;
   }
 }
 
