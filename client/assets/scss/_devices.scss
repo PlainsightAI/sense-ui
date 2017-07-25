@@ -9,13 +9,50 @@
   align-items: center;
   li {
     font-weight: 700;
+    padding: 0 5px;
   }
 
+}
+
+.devices-list {
+  padding: 0 10px;
+  > li {
+    display: flex;
+    div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      padding: 10px 5px;
+      span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
 }
 
 
 .dashboard-table {
   padding: 0 20px;
+  -webkit-font-smoothing: auto;
+}
+
+.dashboard-view {
+  -webkit-font-smoothing: auto;
+}
+
+.devices-list-icons {
+  i {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 12px;
+    // color: #888;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .grid-3 {
@@ -53,6 +90,10 @@
 .grid-15 {
   width: 15%;
   max-width: 15%;
+}
+.grid-16 {
+  width: 16%;
+  max-width: 16%;
 }
 .grid-17 {
   width: 17%;
