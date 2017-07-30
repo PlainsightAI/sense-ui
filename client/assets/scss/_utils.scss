@@ -5,11 +5,14 @@
   text-transform: uppercase;
 }
 .u-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .u-inline {
   display: inline-block;
 }
 .u-pointer {
   cursor: pointer;
+}
+.u-cursor-normal {
+  cursor: default;
 }
