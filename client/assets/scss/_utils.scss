@@ -1,6 +1,9 @@
 .u-capitalized {
   text-transform: capitalize;
 }
+.u-normal-text {
+  text-transform: none !important;
+}
 .u-uppercase {
   text-transform: uppercase;
 }
@@ -15,4 +18,7 @@
 }
 .u-cursor-normal {
   cursor: default;
+}
+.u-margin-bottom-sm {
+  margin-bottom: 10px;
 }
