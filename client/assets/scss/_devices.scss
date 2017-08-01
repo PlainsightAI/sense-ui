@@ -1,3 +1,12 @@
+.menu-bar {
+  .ion-android-radio-button-off {
+    font-size: 15px;
+    line-height: 20px;
+    margin-right: 2px;
+  }
+}
+
+
 .devices-list-header {
   display: flex;
   width: 100%;
@@ -62,10 +71,12 @@
     cursor: pointer;
   }
   .ion-android-radio-button-off {
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 15px;
   }
   .ion-battery-full, .ion-battery-half, .ion-battery-low, .ion-battery-empty, .ion-battery-charging {
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: 22px;
   }
   .ion-edit {
     font-size: 18px;
@@ -161,6 +172,16 @@
     }
     a {
       margin: 0 12px;
+    }
+  }
+  i {
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 3px;
+    &.is-large {
+      font-size: 15px;
+      line-height: 18px;
+      margin-left: 2px;
     }
   }
 }
