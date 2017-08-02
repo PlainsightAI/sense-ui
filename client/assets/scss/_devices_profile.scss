@@ -1,0 +1,32 @@
+.device-profile {
+  padding: 20px;
+  line-height: 22.4px;
+  h3 {
+    font-weight: 700;
+    padding-bottom: 7px;
+    margin-bottom: 14px;
+    margin-top: 0;
+    border-bottom: 1px solid $status-blue-color;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+  }
+}
+.device-profile-header {
+  .button {
+    margin: 0;
+  }
+  h1 {
+    margin-top: -2px;
+    margin-bottom: 0;
+  }
+}
+
+.device-profile-section {
+  margin-top: 15px;
+  padding: 0;
+  // div {
+  //   text-transform: capitalize;
+  // }
+}
