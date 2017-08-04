@@ -1,3 +1,10 @@
+a.is-disabled {
+  cursor: default;
+  &:hover {
+    color: #1a1a1a !important;
+  }
+}
+
 .menu-bar {
   .ion-android-radio-button-off {
     font-size: 15px;
