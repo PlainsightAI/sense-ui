@@ -30,3 +30,15 @@
   //   text-transform: capitalize;
   // }
 }
+
+.col-sm-4 {
+  width: 33.33%;
+  max-width: 33.33%;
+  flex-basis: 33.33%;
+}
+
+.device-profile-map {
+  width: 100%;
+  height: 300px;
+  background: #ccc;
+}
