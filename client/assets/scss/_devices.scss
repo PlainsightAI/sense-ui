@@ -53,6 +53,10 @@ a.is-disabled {
     display: flex;
     align-items: center;
     padding: 12px 5px;
+    span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 }
 
