@@ -24,14 +24,22 @@
 }
 
 .device-profile-section {
-  margin-top: 15px;
+  margin-top: 30px;
   padding: 0;
+  &.small-top-margin {
+    margin-top: 15px;
+  }
 }
 
-.col-sm-4 {
+.col-xs-4 {
   width: 33.33%;
   max-width: 33.33%;
   flex-basis: 33.33%;
+}
+.col-xs-6 {
+  width: 50%;
+  max-width: 50%;
+  flex-basis: 50%;
 }
 
 .device-profile-map {
