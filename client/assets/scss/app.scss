@@ -21,7 +21,9 @@
 @import "settings";
 @import "foundation";
 @import "style";
-
+// stylesheet for sweet alert library. Will probably be removed eventually
+@import 'sweet_alert';
+// custom styles for react pages
 @import 'utils';
 @import 'animations';
 @import "form_helper";
