@@ -1,6 +1,6 @@
-# Foundation CSS framework
+# Sense UI CSS framework
 
-Sixgill CSS framework is based on Foundation for Apps by ZURB
+Sixgill Sense UI CSS framework is based on Foundation for Apps by ZURB
 
   - [Foundation for Apps homepage](http://foundation.zurb.com/apps.html)
   - [Foundation for Apps on Github](https://github.com/zurb/foundation-apps)
