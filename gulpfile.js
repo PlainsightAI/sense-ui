@@ -31,16 +31,16 @@ var paths = {
   ],
   // These files include Foundation for Apps and its dependencies
   foundationJS: [
-    'bower_components/fastclick/lib/fastclick.js',
-    'bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js',
-    'bower_components/tether/tether.js',
-    'bower_components/hammerjs/hammer.js',
-    'bower_components/angular/angular.js',
-    'bower_components/angular-animate/angular-animate.js',
-    'bower_components/angular-ui-router/release/angular-ui-router.js',
-    'bower_components/foundation-apps/js/vendor/**/*.js',
-    'bower_components/foundation-apps/js/angular/**/*.js',
-    '!bower_components/foundation-apps/js/angular/app.js'
+    'node_modules/fastclick/lib/fastclick.js',
+    'node_modules/viewport-units-buggyfill/viewport-units-buggyfill.js',
+    'node_modules/tether/tether.js',
+    'node_modules/hammerjs/hammer.js',
+    'node_modules/angular/angular.js',
+    'node_modules/angular-animate/angular-animate.js',
+    'node_modules/angular-ui-router/release/angular-ui-router.js',
+    'node_modules/foundation-apps/js/vendor/**/*.js',
+    'node_modules/foundation-apps/js/angular/**/*.js',
+    '!node_modules/foundation-apps/js/angular/app.js'
   ],
   // These files are for your app's JavaScript
   appJS: [
@@ -78,7 +78,7 @@ gulp.task('copy:templates', function() {
 
 // Compiles the Foundation for Apps directive partials into a single JavaScript file
 gulp.task('copy:foundation', function(cb) {
-  gulp.src('bower_components/foundation-apps/js/angular/components/**/*.html')
+  gulp.src('node_modules/foundation-apps/js/angular/components/**/*.html')
     .pipe($.ngHtml2js({
       prefix: 'components/',
       moduleName: 'foundation',
@@ -90,7 +90,7 @@ gulp.task('copy:foundation', function(cb) {
   ;
 
   // Iconic SVG icons
-  gulp.src('./bower_components/foundation-apps/iconic/**/*')
+  gulp.src('./node_modules/foundation-apps/iconic/**/*')
     .pipe(gulp.dest('./build/assets/img/iconic/'))
   ;
 
