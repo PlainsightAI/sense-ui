@@ -56,3 +56,13 @@ All source SCSS files live inside: `client/assets/scss/` folder
 All template HTML files can be found inside: `client/templates/` folder
 
 All build outputs go to: `build` folder
+
+### Making New Build with Tag
+
+To view all existing tags run `git tag`
+
+Make a new tag by running `git tag v0.0.X` and bump X to a higher version than the last tag.
+
+Last thing to do is run `git push --tags` which will push the tag to Git and make it live.
+
+Remember to update `package.json` and update the version to correspond with new tag!
