@@ -1,0 +1,212 @@
+
+<div class="grid-frame vertical">
+  <div class="menu-group top-bar primary">
+    <div class="menu-group-left">
+      <ul class="menu-bar primary">
+        <li class="sense-logo"><a href="#"><img src="/assets/img/sixgill-sense-logo-inverted.svg" /></a></li>
+        <li class="active"><a href="#">Apps</a></li>
+        <li><a href="#">Connectors</a></li>
+        <li><a href="#">Security</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-group-right">
+      <ul class="menu-bar primary icon-left">
+        <li><a href="#" zf-popup-toggle="organizations-dropdown">AT&T <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+            <zf-popup id="organizations-dropdown" class="popover organizations-popover">
+              <form>
+                <label>
+                  <span class="inline-label">
+                    <span class="form-label"><i class="icon ion-search"></i></span>
+                    <input type="text" placeholder="Search Organizations">
+                  </span>
+                </label>
+              </form>
+              <ul class="organizations-list">
+                <li><a href="#">AT&T</a></li>
+                <li><a href="#">Sixgill</a></li>
+                <li><a href="#">Verizon</a></li>
+                <li><a href="#">San Francisco City</a></li>
+                <li><a href="#">Los Angeles City</a></li>
+              </ul>
+            </zf-popup>
+        </li>
+
+        <li><a href="#" zf-popup-toggle="account-dropdown"><i class="icon ion-person account-icon"></i> <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+          <zf-popup id="account-dropdown" class="popover account-popover">
+            <ul>
+              <li><a href="#">Admin</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Getting Started</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Log out</a></li>
+            </ul>
+          </zf-popup>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="grid-block vertical sidebar">
+      <div class="grid-content add-new-menu">
+        <a href="#" class="button">Add New <i class="icon ion-chevron-right"></i></a>
+      </div>
+
+      <div class="grid-content projects-menu">
+        <ul>
+          <li class="app-folder app-expanded">
+            <strong class="app-name">Demo App</strong>
+            <ul>
+              <li class="project-item active">
+                <a href="#" class="project-title">Test</a>
+              </li>
+              <li class="project-item">
+                <a href="#" class="project-title">Untitled-1</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="app-folder app-expanded">
+            <strong class="app-name">Test App</strong>
+            <ul>
+              <li class="project-item">
+                <a href="#" class="project-title">Untitled-2</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="app-folder app-collapsed">
+            <strong class="app-name">Test App</strong>
+            <ul>
+              <li class="project-item">
+                <a href="#" class="project-title">Untitled-2</a>
+              </li>
+              <li class="project-item">
+                <a href="#" class="project-title">Untitled-3</a>
+              </li>
+              <li class="project-item">
+                <a href="#" class="project-title">Untitled-4</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid-content console-menu">
+        <a zf-open="console-modal" href="#" class="button"><i class="icon ion-code"></i><b>Console</b></a>
+      </div>
+    </div>
+
+    <div class="grid-block vertical view-container">
+      <div class="grid-content secondary-menu">
+        <div class="menu-group">
+          <div class="menu-group-left navigation-items">
+            <ul class="menu-bar condense">
+              <li><a href="#">Overview</a></li>
+              <li class="active"><a href="#">Events</a></li>
+              <li><a href="#">Landmarks</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Alerts</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-group-right link-items">
+            <ul class="menu-bar condense">
+              <li><a href="#">View API keys</a></li>
+              <li><a href="#">Edit App</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-block vertical dashboard-view">
+        <div class="grid-block vertical shrink top-view">
+          <div class="title-wrap clearfix">
+            <h1 class="float-left">Add New Event</h1>
+          </div>
+
+          <ul class="menu-bar quick-filters condense">
+            <li class="active"><a href="#">1. Create New Event</a></li>
+            <li><a href="#">2. Name & Details</a></li>
+            <li><a href="#">3. Rules</a></li>
+            <li><a href="#">4. Schedule</a></li>
+            <li><a href="#">5. Test & Confirm</a></li>
+          </ul>
+        </div>
+
+        <div class="grid-block bottom-view">
+          <div class="grid-content medium-3 no-padding-left">
+            <h3 class="title-underline">Create New Event From</h3>
+            <ul class="choose-template">
+              <li class="active"><a href=#><i class="icon ion-clipboard large-icons"></i> <b>Template</b></a></li>
+              <li><a href=#><i class="icon ion-document-text large-icons"></i> <b>Existing Event</b></a></li>
+              <li><a href=#><i class="icon ion-document large-icons"></i> <b>Blank Document</b></a></li>
+            </ul>
+          </div>
+
+          <div class="grid-content medium-9 no-padding-right">
+            <h3 class="title-underline">Templates</h3>
+
+            <h5><b>Location Based</b></h5>
+            <div class="grid-block box-wrap">
+              <div class="box medium-6 active">
+                <h6><b><i>Enters Location</i></b></h6>
+                <p>Define when a device enters a location and action that will take place.</p>
+              </div>
+              <div class="box medium-6">
+                <h6><b><i>Leaves Location</i></b></h6>
+                <p>When a device leaves a specified location what action will be triggered.</p>
+              </div>
+              <div class="box medium-6">
+                <h6><b><i>Stays in Location</i></b></h6>
+                <p>When a device stays in a specific location for a certain amount of time an action will be triggered.</p>
+              </div>
+            </div>
+
+            <h5><b>Time Based</b></h5>
+            <div class="grid-block box-wrap">
+              <div class="box medium-6">
+                <h6><b><i>Recurring Event</i></b></h6>
+                <p>Create events that are recurring on a certain time interval. i.e. Daily, Weekly...</p>
+              </div>
+              <div class="box medium-6">
+                <h6><b><i>Time in Area</i></b></h6>
+                <p>Send a message to a device that was in a location for a specified duration of time.</p>
+              </div>
+            </div>
+
+            <h5><b>Sensor Based</b></h5>
+            <div class="grid-block box-wrap">
+              <div class="box medium-6">
+                <h6><b><i>Attribute reaches value</i></b></h6>
+                <p>Define what happens when an attribute reaches a certain value. i.e. Temperature reaches 100°F.</p>
+              </div>
+              <div class="box medium-6">
+                <h6><b><i>Attribute drops below treshold</i></b></h6>
+                <p>When an attribute of sensor drops below a certain threshold it should send an internal message.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid-block shrink controls-view">
+          <div class="v-align">
+            <a href="#">Cancel</a>
+            <a href="#" class="button no-margin">Continue to Name & Details</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="grid-block green-line"></div>
+</div>
+
+<div zf-modal="console-modal" id="console-modal">
+  <a zf-close="" class="close-button"><i class="icon ion-close"></i></a>
+  <h1>Debug Console</h1>
+  <p>Basic Modal</p>
+</div>
