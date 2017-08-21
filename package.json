@@ -1,6 +1,6 @@
 {
-  "name": "foundation-apps-template",
-  "version": "1.2.0",
+  "name": "sense-ui",
+  "version": "0.0.2",
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production"
