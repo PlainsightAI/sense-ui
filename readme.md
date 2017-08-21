@@ -17,35 +17,20 @@ You'll need the following software installed to get started.
 
 ### Installing
 
-Easiest is to install The Foundation CLI through npm.
+After cloning the repo run:
 
 ```bash
-npm install -g foundation-cli
+npm install
 ```
 
-This will add the `foundation` command to your system.
-
-### Updating
-
-The CLI periodically gets updates that add features or fix bugs. Use npm to upgrade the CLI to the newest version.
-
-```bash
-npm update -g foundation-cli
-```
-
-To check what version you currently have, use `-v`.
-
-```bash
-foundation -v
-```
+This will install all dependencies that you need to run the framework.
 
 ### Running
 
-While inside of `foundation-css` folder, run `foundation watch` to assemble app and automatically run a test server for css.
+Run `gulp sever` to assemble app and automatically run a test server for css. The CSS framework will watch for changes and update automatically.
 
 ```bash
-cd foundation-css
-foundation watch
+gulp server
 ```
 
 While this process is running, you can view the assembled app in your browser, at this URL:
@@ -56,11 +41,13 @@ http://localhost:8079/
 
 ### Building
 
-To build css for production, use `foundation build`.
+To build css for production, use `gulp build --production`.
 
 ```bash
-foundation build
+gulp build --production
 ```
+
+This will minimize & compile all scss files into a single app.css file that is used in Sixgill Sense App.
 
 ### CSS organization
 
@@ -69,5 +56,3 @@ All source SCSS files live inside: `client/assets/scss/` folder
 All template HTML files can be found inside: `client/templates/` folder
 
 All build outputs go to: `build` folder
-
-## Edit
