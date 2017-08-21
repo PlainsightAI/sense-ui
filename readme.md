@@ -61,8 +61,8 @@ All build outputs go to: `build` folder
 
 To view all existing tags run `git tag`
 
-Make a new tag by running `git tag v0.0.X` and bump X to a higher version than the last tag.
+FIRST update `package.json` and update the version to `0.0.X`, where X should be your new version number.
+
+Then run `git tag v0.0.X` and make sure the tag version is same as the one in `package.json` file.
 
 Last thing to do is run `git push --tags` which will push the tag to Git and make it live.
-
-Remember to update `package.json` and update the version to correspond with new tag!
