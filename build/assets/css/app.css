@@ -10355,26 +10355,14 @@ label input {
   width: 100%;
   height: 300px; }
 
-a.is-disabled {
-  cursor: default; }
-  a.is-disabled:hover {
-    color: #1a1a1a !important; }
+.dashboard-table {
+  padding: 0 20px;
+  -webkit-font-smoothing: auto; }
 
-.menu-bar .ion-android-radio-button-off {
-  font-size: 15px;
-  line-height: 20px;
-  margin-right: 2px; }
+.dashboard-view {
+  -webkit-font-smoothing: auto; }
 
-.devices-actions-dropdown {
-  width: 140px;
-  top: 25px;
-  left: 25px; }
-  .devices-actions-dropdown li {
-    cursor: pointer; }
-    .devices-actions-dropdown li:hover {
-      color: #0051c6; }
-
-.devices-list-header, .list-header {
+.list-header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -10386,7 +10374,7 @@ a.is-disabled {
   border-bottom: 1px solid #e6e6e6;
   -ms-flex-align: center;
       align-items: center; }
-  .devices-list-header li, .list-header li {
+  .list-header li {
     font-weight: 700;
     padding: 0 5px; }
 
@@ -10408,14 +10396,14 @@ a.is-disabled {
       text-overflow: ellipsis;
       overflow: hidden; }
 
-.devices-list-row {
+.collapsible-list-row {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e6e6e6;
   padding: 0 10px;
   cursor: pointer;
   transition: border 0.2s ease-in-out; }
-  .devices-list-row .devices-list-col {
+  .collapsible-list-row .collapsible-list-col {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -10423,42 +10411,39 @@ a.is-disabled {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    padding: 12px 5px; }
-    .devices-list-row .devices-list-col.devices-list-icons {
+    box-sizing: border-box;
+    padding: 10px 5px; }
+    .collapsible-list-row .collapsible-list-col.collapsible-list-icons {
       padding: 0 5px; }
-    .devices-list-row .devices-list-col span {
+    .collapsible-list-row .collapsible-list-col span {
       text-overflow: ellipsis;
       overflow: hidden; }
 
-.dashboard-table {
-  padding: 0 20px;
-  -webkit-font-smoothing: auto; }
-
-.dashboard-view {
-  -webkit-font-smoothing: auto; }
-
-.devices-list-icons i {
+.collapsible-list-icons i {
   font-size: 22px;
   font-weight: 700;
   margin-right: 16px;
   line-height: normal; }
-  .devices-list-icons i:last-child {
+  .collapsible-list-icons i:last-child {
     margin-right: 0; }
 
-.devices-list-icons.actions i {
+.collapsible-list-icons.actions i {
   cursor: pointer; }
 
-.devices-list-icons .ion-android-radio-button-off {
+.collapsible-list-icons .ion-android-radio-button-off {
   font-size: 15px; }
 
-.devices-list-icons .ion-battery-full, .devices-list-icons .ion-battery-half, .devices-list-icons .ion-battery-low, .devices-list-icons .ion-battery-empty, .devices-list-icons .ion-battery-charging {
+.collapsible-list-icons .ion-battery-full, .collapsible-list-icons .ion-battery-half, .collapsible-list-icons .ion-battery-low, .collapsible-list-icons .ion-battery-empty, .collapsible-list-icons .ion-battery-charging {
   font-size: 22px; }
 
-.devices-list-icons .ion-edit {
+.collapsible-list-icons .ion-edit {
   font-size: 18px; }
 
-.devices-list-icons .ion-toggle-filled, .devices-list-icons .ion-toggle {
+.collapsible-list-icons .ion-toggle-filled, .collapsible-list-icons .ion-toggle {
   font-size: 32px; }
+
+.icon {
+  transition: color 0.2s ease-in-out; }
 
 .grid-3 {
   width: 3%;
@@ -10475,6 +10460,10 @@ a.is-disabled {
 .grid-7 {
   width: 7%;
   max-width: 7%; }
+
+.grid-8 {
+  width: 8%;
+  max-width: 8%; }
 
 .grid-10 {
   width: 10%;
@@ -10520,6 +10509,10 @@ a.is-disabled {
   width: 25%;
   max-width: 25%; }
 
+.grid-23 {
+  width: 23%;
+  max-width: 23%; }
+
 .grid-30 {
   width: 30%;
   max-width: 30%; }
@@ -10527,6 +10520,48 @@ a.is-disabled {
 .grid-33 {
   width: 33%;
   max-width: 33%; }
+
+a.is-disabled {
+  cursor: default; }
+  a.is-disabled:hover {
+    color: #1a1a1a !important; }
+
+.menu-bar .ion-android-radio-button-off {
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 2px; }
+
+.devices-actions-dropdown {
+  width: 140px;
+  top: 25px;
+  left: 25px; }
+  .devices-actions-dropdown li {
+    cursor: pointer; }
+    .devices-actions-dropdown li:hover {
+      color: #0051c6; }
+
+.devices-list-icons i {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 16px;
+  line-height: normal; }
+  .devices-list-icons i:last-child {
+    margin-right: 0; }
+
+.devices-list-icons.actions i {
+  cursor: pointer; }
+
+.devices-list-icons .ion-android-radio-button-off {
+  font-size: 15px; }
+
+.devices-list-icons .ion-battery-full, .devices-list-icons .ion-battery-half, .devices-list-icons .ion-battery-low, .devices-list-icons .ion-battery-empty, .devices-list-icons .ion-battery-charging {
+  font-size: 22px; }
+
+.devices-list-icons .ion-edit {
+  font-size: 18px; }
+
+.devices-list-icons .ion-toggle-filled, .devices-list-icons .ion-toggle {
+  font-size: 32px; }
 
 .devices-list-details, .device-profile-section {
   display: -ms-flexbox;
@@ -10588,9 +10623,6 @@ a.is-disabled {
   .button.is-clear.is-red {
     color: #ff1d25;
     border-color: #ff1d25; }
-
-.icon {
-  transition: color 0.2s ease-in-out; }
 
 .device-profile {
   padding: 20px;
