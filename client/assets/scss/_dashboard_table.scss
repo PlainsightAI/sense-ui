@@ -175,3 +175,23 @@
   width: 33%;
   max-width: 33%;
 }
+
+
+.list-actions-dropdown {
+  width: 140px;
+  top: 25px;
+  left: 25px;
+  li {
+    cursor: pointer;
+    // color: #002966;
+    &:hover {
+      color: #0051c6;
+    }
+  }
+  &.devices {
+    width: 140px;
+  }
+  &.landmarks {
+    width: 160px;
+  }
+}

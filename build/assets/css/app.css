@@ -10521,6 +10521,19 @@ label input {
   width: 33%;
   max-width: 33%; }
 
+.list-actions-dropdown {
+  width: 140px;
+  top: 25px;
+  left: 25px; }
+  .list-actions-dropdown li {
+    cursor: pointer; }
+    .list-actions-dropdown li:hover {
+      color: #0051c6; }
+  .list-actions-dropdown.devices {
+    width: 140px; }
+  .list-actions-dropdown.landmarks {
+    width: 160px; }
+
 a.is-disabled {
   cursor: default; }
   a.is-disabled:hover {
