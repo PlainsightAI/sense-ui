@@ -40,6 +40,12 @@
   }
 }
 
+.collapsible-list {
+  li:hover, li.is-open {
+    background: #fff;
+  }
+}
+
 .collapsible-list-row {
   display: flex;
   border-bottom: 1px solid #e6e6e6;
