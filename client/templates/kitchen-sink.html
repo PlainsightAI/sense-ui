@@ -2,270 +2,320 @@
 name: kitchen-sink
 url: /kitchen-sink
 ---
-
-## Kitchen Sink
-<h3 class="subheader">This is a collection of all the Foundation components.</h3>
-
-***
-
-##### Accordion
-
-<div zf-accordion-set>
-  <div zf-accordion title="Test Title">
-    <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at.</p>
-  </div>
-  <div zf-accordion title="Another Test">
-    <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at.</p>
-  </div>
-</div>
-
-```html
-<div zf-accordion-set>
-  <div zf-accordion title="Test Title">
-    <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at.</p>
-  </div>
-  <div zf-accordion title="Another Test">
-    <p>Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at.</p>
-  </div>
-</div>
-```
-
-***
-
-##### Buttons
-<a href="#" class="button">This is a button</a>
-<a href="#" class="button tiny">This is a button</a>
-<a href="#" class="button large">This is a button</a>
-<a href="#" class="button secondary">This is a button</a>
-<a href="#" class="button success">This is a button</a>
-<a href="#" class="button alert">This is a button</a>
-
-***
-
-##### Button Groups
-<ul class="button-group">
-	<li><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-</ul>
-
-<ul class="button-group tiny">
-	<li><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-</ul>
-
-<ul class="button-group segmented">
-	<li class="is-active"><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-	<li><a href="#">Button Group</a></li>
-</ul>
-
-***
-
-##### Cards
-
-<!-- Start Cards -->
-<div class="grid-block small-up-3">
+<div class="grid-frame vertical">
   <div class="grid-content">
-    <div class="card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
-      </div>
-    </div>
-  </div>
-  <div class="grid-content">
-    <div class="primary card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <br />
+        <br />
+        <h1><b>Kitchen Sink</b></h1>
+        <br /><br />
+        <h2 class="title-underline"><b>Headings</b></h2>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h3 class="title-underline">Heading 3, class: "title-underline"</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <br /><br />
       </div>
     </div>
-  </div>
-  <div class="cgrid-content">
-    <div class="dark card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Forms</b></h2>
+
+        <form>
+          <label>
+          Input Label
+          <input type="text" placeholder="Text field">
+          </label>
+          <div class="grid-block">
+            <div class="small-12 medium-6 grid-content">
+            <label>
+            Input Label
+            <input type="text" placeholder="Text field">
+            </label>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+            <label>Select Label</label>
+            <select name="" id="">
+            <option value="">Breakfast</option>
+            <option value="">Bacon Pancakes</option>
+            <option value="">Mountain Dew</option>
+            <option value="">Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella</option>
+            </select>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+            <label>
+            Prefix/postfix
+            <span class="inline-label">
+            <span class="form-label">www.</span>
+            <input type="text">
+            <span class="form-label">.com</span>
+            </span>
+            </label>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+            <label>
+            Search
+            <span class="inline-label">
+            <input type="search" placeholder="Search a thing">
+            <a href="#" class="button">Search</a>
+            </span>
+            </label>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+            <label>Choose Your Favorite</label>
+            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+            <label>Check these out</label>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+              <br />
+              <h5><b>Switch (small | default | large)</b></h5>
+              <div class="switch small">
+                <input type="checkbox" id="switch-example">
+                <label for="switch-example"></label>
+              </div>
+              <div class="switch">
+                <input type="checkbox" id="switch-example2">
+                <label for="switch-example2"></label>
+              </div>
+              <div class="switch large">
+                <input type="checkbox" id="switch-example3">
+                <label for="switch-example3"></label>
+              </div>
+            </div>
+            <div class="small-12 medium-6 grid-content">
+              <br />
+              <h5><b>Range slider</b></h5>
+              <input type="range">
+            </div>
+          </div>
+
+          <br /><br />
+        </form>
       </div>
     </div>
-  </div>
-  <div class="grid-content">
-    <div class="success card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
-      </div>
-    </div>
-  </div>
-  <div class="grid-content">
-    <div class="warning card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
-      </div>
-    </div>
-  </div>
-  <div class="grid-content">
-    <div class="alert card">
-      <img src="http://placekitten.com/g/400/200" />
-      <div class="card-division">
-        This is content
-      </div>
-      <div class="card-item">
-        <h4>The Basics: Group and Block</h4>
-        <p>The most basic elements in the Foundation for Apps grid are the Group and Block.</p>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Buttons</b></h2>
+
+        <div class="grid-block">
+          <div class="small-12 medium-6 grid-content">
+            <h5><b>Colors</b></h5>
+            <a class="button" href="#">Primary Color</a>
+            <a class="secondary button" href="#">Secondary Color</a>
+          </div>
+
+          <div class="small-12 medium-6 grid-content">
+            <h5><b>Hollow Buttons</b></h5>
+            <a href="#" class="hollow button">Hollow Button</a>
+            <a href="#" class="alert hollow button">Hollow Alert Button</a>
+            <a href="#" class="success hollow button">Hollow Success Button</a>
+          </div>
+
+          <div class="small-12 medium-6 grid-content">
+            <h5><b>Sizes</b></h5>
+            <a class="tiny button" href="#">Tiny Button</a>
+            <a class="small button" href="#">Small Button</a>
+            <a class="button" href="#">Default Button</a>
+            <a class="large button" href="#">Large Button</a>
+            <a class="expand button" href="#">Expand Button</a>
+          </div>
+        </div>
+        <br /><br />
+
+
       </div>
     </div>
-  </div>
-</div>
-<!-- End Cards -->
 
-***
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Top Level Navigation</b></h2>
 
-##### Block List
-<section class="block-list with-icons">
-  <header>List title</header>
-  <ul>
-    <!-- With a label -->
-    <li class="with-chevron">
-      <a href="#">
-        List item 1
-        <span class="label">Right Label</span>
-      </a>
-    </li>
-    <!-- With an icon -->
-    <li>
-      <img src="http://placehold.it/1x1" alt="">
-      <a href="#">
-        List item 2
-        <span class="left label">Left Label</span>
-      </a>
-    </li>
-    <li class="with-chevron"><a href="#">List item 3</a></li>
-    <li><a href="#">List item 4</a></li>
-  </ul>
-</section>
+        <div class="menu-group top-bar primary">
+          <div class="menu-group-left">
+            <ul class="menu-bar primary">
+              <li class="sense-logo"><a href="#"><img src="/assets/img/sixgill-sense-logo-inverted.svg"></a></li>
+              <li class="active"><a href="#">Apps</a></li>
+              <li><a href="#">Connectors</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
 
-<section class="block-list">
-  <header>Does life matter?</header>
-  <ul>
-    <li>
-      <input type="checkbox" id="life">
-      <label for="life">Yeah!</label>
-    </li>
-  </ul>
-</section>
+          <div class="menu-group-right">
+            <ul class="menu-bar primary icon-left">
+              <li><a href="#" >AT&amp;T <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+                  <div class="popover organizations-popover popup ng-isolate-scope">
+                    <form>
+                      <label>
+                        <span class="inline-label">
+                          <span class="form-label"><i class="icon ion-search"></i></span>
+                          <input type="text" placeholder="Search Organizations">
+                        </span>
+                      </label>
+                    </form>
+                    <ul class="organizations-list">
+                      <li><a href="#">AT&amp;T</a></li>
+                      <li><a href="#">Sixgill</a></li>
+                      <li><a href="#">Verizon</a></li>
+                      <li><a href="#">San Francisco City</a></li>
+                      <li><a href="#">Los Angeles City</a></li>
+                    </ul>
+                  </div>
+              </li>
 
-<section class="block-list">
-  <header>What is delicious?</header>
-  <ul>
-    <li>
-      <input type="radio" name="delicious" id="eggs" value="eggs" checked>
-      <label for="eggs">Eggs</label>
-    </li>
-    <li>
-      <input type="radio" name="delicious" id="bacon" value="bacon">
-      <label for="bacon">Bacon</label>
-    </li>
-    <li>
-      <input type="radio" name="delicious" id="toast" value="toast">
-      <label for="toast">Toast</label>
-    </li>
-  </ul>
-</section>
+              <li><a href="#"><i class="icon ion-person account-icon"></i> <i class="icon ion-chevron-down dropdown-arrow"></i></a>
+                <div class="popover account-popover popup">
+                  <ul class="ng-scope">
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Log out</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<section class="block-list">
-  <header>Switch a Switch</header>
-  <ul>
-    <li>
-      <span>Switch!</span>
-      <div class="switch">
-        <input type="checkbox" id="switchOne">
-        <label for="switchOne"></label>
+        <br /><br />
       </div>
-    </li>
-  </ul>
-</section>
+    </div>
 
-<section class="block-list">
-  <header>Log In</header>
-  <ul>
-    <li><input type="text" placeholder="User name"></li>
-    <li><input type="password" placeholder="Password"></li>
-  </ul>
-</section>
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Secondary Menu</b></h2>
 
-<section class="block-list">
-  <header>Duration</header>
-  <ul>
-    <li class="with-dropdown"><select name="" id="">
-      <option>Now</option>
-      <option>Later</option>
-      <option>Eventually</option>
-      <option>Forever</option>
-    </select></li>
-  </ul>
-</section>
+        <div class="grid-block vertical">
 
-***
+          <div class="grid-content secondary-menu">
+              <div class="menu-group">
+                <div class="menu-group-left navigation-items">
+                  <ul class="menu-bar condense">
+                    <li><a href="#">Item</a></li>
+                    <li class="active"><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
 
-##### Iconic
-<img data-src="/iconic/svg/smart/account.svg" data-file-extension="CCP4" zf-iconic />
+                <div class="menu-group-right link-items">
+                  <ul class="menu-bar condense">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-***
+        </div>
+        <br /><br />
+      </div>
+    </div>
 
-##### Tabs
-<div zf-tabs>
-  <div zf-tab title="This is Tab 1">
-    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur.</p>
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Boxes</b></h2>
+
+        <div class="grid-block box-wrap">
+          <div class="box medium-6 active">
+            <h6><b><i>Enters Location</i></b></h6>
+            <p>Define when a device enters a location and action that will take place.</p>
+          </div>
+          <div class="box medium-6">
+            <h6><b><i>Leaves Location</i></b></h6>
+            <p>When a device leaves a specified location what action will be triggered.</p>
+          </div>
+          <div class="box medium-6">
+            <h6><b><i>Stays in Location</i></b></h6>
+            <p>When a device stays in a specific location for a certain amount of time an action will be triggered.</p>
+          </div>
+        </div>
+
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Title Wrap</b></h2>
+
+        <div class="title-wrap clearfix">
+            <h1 class="float-left">Title</h1>
+            <a href="#" class="button float-right no-margin">Second Button</a>
+            <a href="#" class="button float-right no-margin">Button</a>
+          </div>
+
+          <br /><br />
+      </div>
+    </div>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Quick Filters Menu Bar</b></h2>
+
+        <ul class="menu-bar quick-filters condense">
+          <li class="active"><a href="#">Active Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
+
+        <br />
+
+        <ul class="menu-bar quick-filters condense">
+          <li class="active"><a href="#">1. Active Item</a></li>
+          <li><a href="#">2. Item</a></li>
+          <li><a href="#">3. Item</a></li>
+          <li><a href="#">4. Item</a></li>
+        </ul>
+
+        <br /> <br />
+
+      </div>
+    </div>
+
+    <div class="grid-block">
+      <div class="grid-container medium-10">
+        <h2 class="title-underline"><b>Statistics Bar</b></h2>
+
+        <div class="menu-group statistics-bar">
+          <div class="menu-group-left statistics-items">
+            <ul class="menu-bar condense">
+              <li><b>Total: 20 Devices</b></li>
+              <li><i class="icon ion-android-radio-button-off status-green"></i>&nbsp;<b>58%</b>&nbsp;Active</li>
+              <li><i class="icon ion-android-radio-button-off status-red"></i>&nbsp;<b>14%</b>&nbsp;Disabled</li>
+              <li><i class="icon ion-android-radio-button-off status-gray"></i>&nbsp;<b>14%</b>&nbsp;Unregistered</li>
+            </ul>
+          </div>
+
+          <div class="menu-group-right link-items">
+            <ul class="menu-bar condense">
+              <li><a href="#">Actions <i class="icon ion-chevron-down dropdown-arrow"></i></a></li>
+              <li><a href="#"><i class="icon ion-gear-a settings-icon"></i></a></li>
+              <li><a href="#"><i class="icon ion-funnel filters-icon"></i> Filters</a></li>
+            </ul>
+          </div>
+        </div>
+
+          <br /><br />
+      </div>
+    </div>
+
+
+    <div class="padding-bottom:300px; display:block;">&nbsp;</div>
+
   </div>
-  <div zf-tab title="Tab 2">
-    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur.</p>
-  </div>
-  <div zf-tab title="Tab 3">
-    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur.</p>
-  </div>
-</div>
-
-***
-
-##### Title Bar
-<div class="title-bar">
-  <div class="left"><a href="#">Back</a></div>
-  <div class="center title">Title</div>
-  <div class="right"><a href="#">Action</a></div>
-</div>
-<br />
-<div class="title-bar primary">
-  <div class="left"><a href="#">Back</a></div>
-  <div class="center title">Title</div>
-  <div class="right"><a href="#">Action</a></div>
-</div>
-<br />
-<div class="title-bar dark">
-  <div class="left"><a href="#">Back</a></div>
-  <div class="center title">Title</div>
-  <div class="right"><a href="#">Action</a></div>
 </div>
