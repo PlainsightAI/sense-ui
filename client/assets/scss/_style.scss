@@ -631,6 +631,15 @@ button,
   line-height: 1rem;
 }
 
+// Labels Extra
+
+.label.tag {
+  background: #f7fbfe;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0;
+  color: #0a0a0a;
+}
+
 // Add Events
 .choose-template {
   list-style: none;
