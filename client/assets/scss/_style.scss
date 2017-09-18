@@ -98,8 +98,8 @@ ul, li {
     background: smartscale($primary-color, 7%);
   }
 
-  .menu-bar .active a,
-  .menu-bar .active a:hover {
+  .menu-bar a.active,
+  .menu-bar a.active:hover {
     border-top: 3px solid $terciary-color;
   }
 
