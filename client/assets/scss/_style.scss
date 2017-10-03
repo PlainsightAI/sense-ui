@@ -520,6 +520,20 @@ button,
   vertical-align: top;
 }
 
+.button.busy::after {
+  content: '';
+  background-color: #fff;
+  margin: 0 0 0 5px;
+  width: 14px;
+  height: 14px;
+  vertical-align: top;
+  display: inline-block;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
 // Spinner
 .spinner {
   width: 24px;
