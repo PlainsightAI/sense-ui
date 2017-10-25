@@ -708,12 +708,11 @@ button,
   padding: 0.5rem 1rem 1rem 1rem !important;
   margin: 1em 0.75em;
   border: 1px solid #e6e6e6;
-  border-radius: 2px !important;
+  border-radius: 0 !important;
   background-color: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0;
   color: #0a0a0a;
-
-  display: flex;
+  display: inline-block;
 }
 
 .notification .notification-title,
@@ -727,6 +726,10 @@ button,
   color: #1a1a1a;
 }
 
+.notification p {
+  margin-bottom: 0.75em;
+}
+
 .notification .close-button {
   color: $primary-color;
   font-size: 1em;
@@ -737,28 +740,33 @@ button,
 }
 
 .notification.primary {
-  background-color: #d7ecfa;
+  background-color: #F0F4FD;
   color: #0a0a0a;
+  border-left: 2px solid #0051C6;
 }
 
 .notification.secondary {
-  background-color: #eaeaea;
+  background-color: #FFFFEB;
   color: #0a0a0a;
+  border-left: 2px solid #FFDD08;
 }
 
 .notification.success {
-  background-color: #e1faea;
+  background-color: #EBFAEF;
   color: #0a0a0a;
+  border-left: 2px solid #4DDB5A;
 }
 
 .notification.warning {
-  background-color: #fff3d9;
+  background-color: #FFFFEB;
   color: #0a0a0a;
+  border-left: 2px solid #FF266A !important;
 }
 
 .notification.alert {
-  background-color: #f7e4e1;
+  background-color: #FFE9F0;
   color: #0a0a0a;
+  border-left: 2px solid #FF266A;
 }
 
 
