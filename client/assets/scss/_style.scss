@@ -702,6 +702,60 @@ button,
   color: #0a0a0a;
 }
 
+// List
+
+.list {
+  a {
+    color: $body-font-color;
+    max-width: calc(100% - 20px);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: $secondary-color;
+      border-bottom: 1px solid $terciary-color;
+    }
+  }
+
+  span {
+    border-bottom: 1px solid transparent;
+  }
+
+  li {
+    margin-top: 5px;
+
+    &:hover .icon {
+      display: inline-block;
+    }
+  }
+
+  a.is-active {
+    color: $secondary-color;
+    border-bottom: 1px solid $terciary-color;
+    font-weight: 700;
+  }
+
+  span.is-active {
+    border-bottom: 1px solid $terciary-color;
+    padding-bottom: 3px;
+    font-weight: 700;
+  }
+
+  .icon {
+    display: none;
+    float: right;
+
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
 // Notification
 
 .notification {
