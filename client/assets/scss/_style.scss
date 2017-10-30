@@ -705,7 +705,7 @@ button,
 // List
 
 .list {
-  a {
+  .list-link {
     color: $body-font-color;
     max-width: calc(100% - 20px);
     display: inline-block;
@@ -721,8 +721,10 @@ button,
     }
   }
 
-  span {
+  .list-icon-link {
+    display: inline-block;
     border-bottom: 1px solid transparent;
+    float: right;
   }
 
   li {
