@@ -893,6 +893,10 @@ button,
   justify-content: space-between;
 }
 
+.three-boxes .box {
+  flex: 0 0 calc(33.3% - 10px);
+}
+
 // Filters
 .filters-container {
   padding: 15px;
