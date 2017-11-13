@@ -98,8 +98,8 @@ ul, li {
     background: smartscale($primary-color, 7%);
   }
 
-  .menu-bar a.active,
-  .menu-bar a.active:hover {
+  .menu-bar a.is-active,
+  .menu-bar a.is-active:hover {
     border-top: 3px solid $terciary-color;
   }
 
@@ -168,7 +168,8 @@ ul, li {
 
   .navigation-items li a {
     color: $secondary-color;
-    &.active {
+
+    &.is-active {
       border-bottom: 1px solid $terciary-color;
       font-weight: 700;
     }
@@ -211,9 +212,11 @@ ul, li {
     margin-left: 0;
   }
 
-  .active a {
+  .is-active a {
+    background: none;
     border-bottom: 1px solid $terciary-color;
     font-weight: 700;
+    color: $secondary-color;
   }
 }
 
@@ -407,7 +410,7 @@ ul, li {
     overflow: hidden;
     text-overflow: ellipsis;
 
-    &.active .project-title {
+    &.is-active .project-title {
       color: $secondary-color;
       border-bottom: 1px solid $terciary-color;
       font-weight: 700;
@@ -857,7 +860,7 @@ button,
     border-bottom: 1px solid transparent;
   }
 
-  .active a {
+  .is-active a {
     color: $secondary-color;
 
     b {
@@ -882,7 +885,7 @@ button,
     border: 1px solid #bbb;
   }
 
-  &.active {
+  &.is-active {
     border: 1px solid $terciary-color;
   }
 }
@@ -917,7 +920,7 @@ button,
         color: $secondary-color;
       }
 
-      &.active {
+      &.is-active {
         border-bottom: 1px solid $terciary-color;
         font-weight: 700;
       }
@@ -927,7 +930,8 @@ button,
       margin-left: 0;
     }
 
-    .active a, .active .btn-plain {
+    .is-active a,
+    .is-active .btn-plain {
       border-bottom: 1px solid $terciary-color;
       font-weight: 700;
     }
