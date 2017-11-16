@@ -195,9 +195,13 @@ ul, li {
   background: none;
   margin-bottom: 20px;
 
+  li {
+    margin-top: -5px
+  }
+
   li a {
     padding: 0 0 5px 0;
-    margin: 0 16px 0 16px;
+    margin: 5px 16px 0 16px;
     border-bottom: 1px solid transparent;
     color: $secondary-color;
 
@@ -472,10 +476,6 @@ select {
   }
 }
 
-.no-margin {
-  margin: 0;
-}
-
 .dropdown-arrow {
   margin-left: 6px;
   font-size: 10px;
@@ -490,6 +490,10 @@ select {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid $secondary-color;
+}
+
+.black-underline {
+  border-bottom: 1px solid #808080;
 }
 
 .no-padding-left {
@@ -874,8 +878,9 @@ button,
   border: 1px solid #e6e6e6;
   padding: 10px 15px 0 15px;
   flex: 0 0 calc(50% - 10px);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
+  position: relative;
 
   &:nth-child(2) {
     margin-right: 0;
@@ -898,6 +903,17 @@ button,
 
 .three-boxes .box {
   flex: 0 0 calc(33.3% - 10px);
+}
+
+.box-close {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+
+  &:hover {
+    cursor: pointer;
+    color: $secondary-color;
+  }
 }
 
 // Filters
@@ -1043,4 +1059,26 @@ button,
     vertical-align: top;
     margin: 10px 0 0 0;
   }
+}
+
+.and-or-selector {
+  vertical-align: top;
+  line-height: 25px;
+
+  .is-active {
+    padding: 0 0 3px 0;
+    border-bottom: 1px solid $terciary-color;
+    font-weight: 700;
+    color: $secondary-color;
+  }
+}
+
+// Utils
+
+.no-margin {
+  margin: 0;
+}
+
+.font14 {
+  font-size: 14px;
 }
