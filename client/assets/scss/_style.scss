@@ -1073,6 +1073,23 @@ button,
   }
 }
 
+.form-wrap {
+  label {
+    width: 33%;
+    display: inline-block;
+    padding-right: 1em;
+    vertical-align: top;
+  }
+
+  .Select {
+    margin-top: .5em;
+  }
+
+  input {
+    margin-bottom: 0;
+  }
+}
+
 // Utils
 
 .no-margin {
