@@ -98,6 +98,10 @@ ul, li {
     background: smartscale($primary-color, 7%);
   }
 
+  .menu-bar > li > a {
+    flex: 0 0 auto;
+  }
+
   .menu-bar a.is-active,
   .menu-bar a.is-active:hover {
     border-top: 3px solid $terciary-color;
@@ -110,6 +114,7 @@ ul, li {
 
     img {
       height: 26px;
+      width: 87px;
       margin: 7px 18px 0 20px;
     }
 
@@ -140,12 +145,13 @@ ul, li {
     flex: 0 0 41px;
   }
 
-  .menu-group:after {
+  &::after {
     height: 1px;
     width: 100%;
     background: #e6e6e6;
     content:'';
     position: absolute;
+    left: 0;
     top: 40px;
     z-index: 1;
   }
@@ -159,6 +165,7 @@ ul, li {
     margin: 0 20px 0 20px;
     border-bottom: 1px solid transparent;
     z-index: 2;
+    flex: 0 0 auto;
 
     &:hover {
       background: none;
@@ -204,6 +211,7 @@ ul, li {
     margin: 5px 16px 0 16px;
     border-bottom: 1px solid transparent;
     color: $secondary-color;
+    flex: 0 0 auto;
 
     &:hover {
       background: none;
