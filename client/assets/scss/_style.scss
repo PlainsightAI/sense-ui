@@ -282,6 +282,7 @@ ul, li {
 
         a {
           flex-flow: row nowrap;
+          flex: 0 0 auto;
         }
 
         a:hover {
