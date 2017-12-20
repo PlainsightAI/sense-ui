@@ -46,8 +46,16 @@
 }
 
 .collapsible-list {
+  li {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+  }
   li:hover, li.is-open {
     background: #fff;
+  }
+  li.is-open {
+    border: 1px solid #e6e6e6;
+    border-top: 0;
   }
 }
 
